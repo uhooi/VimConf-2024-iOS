@@ -1,10 +1,3 @@
-//
-//  VimConf2024Tests.swift
-//  VimConf2024Tests
-//
-//  Created by uhooi on 2024/11/03.
-//
-
 import Testing
 @testable import VimConf2024
 

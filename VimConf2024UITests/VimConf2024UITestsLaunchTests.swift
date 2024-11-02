@@ -1,10 +1,3 @@
-//
-//  VimConf2024UITestsLaunchTests.swift
-//  VimConf2024UITests
-//
-//  Created by uhooi on 2024/11/03.
-//
-
 import XCTest
 
 final class VimConf2024UITestsLaunchTests: XCTestCase {
