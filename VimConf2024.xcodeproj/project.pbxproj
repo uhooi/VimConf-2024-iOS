@@ -10,43 +10,14 @@
 		4BACA4352CD684AB0019BC0D /* VimConf2024 in Frameworks */ = {isa = PBXBuildFile; productRef = 4BACA4342CD684AB0019BC0D /* VimConf2024 */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		4BC1A6292CD67D5800E9B90B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4BC1A6102CD67D5600E9B90B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4BC1A6172CD67D5600E9B90B;
-			remoteInfo = VimConf2024;
-		};
-		4BC1A6332CD67D5800E9B90B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4BC1A6102CD67D5600E9B90B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4BC1A6172CD67D5600E9B90B;
-			remoteInfo = VimConf2024;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		4BC1A6182CD67D5600E9B90B /* VimConf2024.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VimConf2024.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BC1A6282CD67D5800E9B90B /* VimConf2024Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VimConf2024Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BC1A6322CD67D5800E9B90B /* VimConf2024UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VimConf2024UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		4BC1A61A2CD67D5600E9B90B /* VimConf2024 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = VimConf2024;
-			sourceTree = "<group>";
-		};
-		4BC1A62B2CD67D5800E9B90B /* VimConf2024Tests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = VimConf2024Tests;
-			sourceTree = "<group>";
-		};
-		4BC1A6352CD67D5800E9B90B /* VimConf2024UITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = VimConf2024UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -57,20 +28,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BACA4352CD684AB0019BC0D /* VimConf2024 in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4BC1A6252CD67D5800E9B90B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4BC1A62F2CD67D5800E9B90B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,8 +45,6 @@
 			isa = PBXGroup;
 			children = (
 				4BC1A61A2CD67D5600E9B90B /* VimConf2024 */,
-				4BC1A62B2CD67D5800E9B90B /* VimConf2024Tests */,
-				4BC1A6352CD67D5800E9B90B /* VimConf2024UITests */,
 				4BACA4332CD684AB0019BC0D /* Frameworks */,
 				4BC1A6192CD67D5600E9B90B /* Products */,
 			);
@@ -99,8 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				4BC1A6182CD67D5600E9B90B /* VimConf2024.app */,
-				4BC1A6282CD67D5800E9B90B /* VimConf2024Tests.xctest */,
-				4BC1A6322CD67D5800E9B90B /* VimConf2024UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,52 +84,6 @@
 			productReference = 4BC1A6182CD67D5600E9B90B /* VimConf2024.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4BC1A6272CD67D5800E9B90B /* VimConf2024Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4BC1A63F2CD67D5800E9B90B /* Build configuration list for PBXNativeTarget "VimConf2024Tests" */;
-			buildPhases = (
-				4BC1A6242CD67D5800E9B90B /* Sources */,
-				4BC1A6252CD67D5800E9B90B /* Frameworks */,
-				4BC1A6262CD67D5800E9B90B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4BC1A62A2CD67D5800E9B90B /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				4BC1A62B2CD67D5800E9B90B /* VimConf2024Tests */,
-			);
-			name = VimConf2024Tests;
-			packageProductDependencies = (
-			);
-			productName = VimConf2024Tests;
-			productReference = 4BC1A6282CD67D5800E9B90B /* VimConf2024Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		4BC1A6312CD67D5800E9B90B /* VimConf2024UITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4BC1A6422CD67D5800E9B90B /* Build configuration list for PBXNativeTarget "VimConf2024UITests" */;
-			buildPhases = (
-				4BC1A62E2CD67D5800E9B90B /* Sources */,
-				4BC1A62F2CD67D5800E9B90B /* Frameworks */,
-				4BC1A6302CD67D5800E9B90B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4BC1A6342CD67D5800E9B90B /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				4BC1A6352CD67D5800E9B90B /* VimConf2024UITests */,
-			);
-			name = VimConf2024UITests;
-			packageProductDependencies = (
-			);
-			productName = VimConf2024UITests;
-			productReference = 4BC1A6322CD67D5800E9B90B /* VimConf2024UITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -189,14 +96,6 @@
 				TargetAttributes = {
 					4BC1A6172CD67D5600E9B90B = {
 						CreatedOnToolsVersion = 16.0;
-					};
-					4BC1A6272CD67D5800E9B90B = {
-						CreatedOnToolsVersion = 16.0;
-						TestTargetID = 4BC1A6172CD67D5600E9B90B;
-					};
-					4BC1A6312CD67D5800E9B90B = {
-						CreatedOnToolsVersion = 16.0;
-						TestTargetID = 4BC1A6172CD67D5600E9B90B;
 					};
 				};
 			};
@@ -215,28 +114,12 @@
 			projectRoot = "";
 			targets = (
 				4BC1A6172CD67D5600E9B90B /* VimConf2024 */,
-				4BC1A6272CD67D5800E9B90B /* VimConf2024Tests */,
-				4BC1A6312CD67D5800E9B90B /* VimConf2024UITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4BC1A6162CD67D5600E9B90B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4BC1A6262CD67D5800E9B90B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4BC1A6302CD67D5800E9B90B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,34 +136,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BC1A6242CD67D5800E9B90B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4BC1A62E2CD67D5800E9B90B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4BC1A62A2CD67D5800E9B90B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4BC1A6172CD67D5600E9B90B /* VimConf2024 */;
-			targetProxy = 4BC1A6292CD67D5800E9B90B /* PBXContainerItemProxy */;
-		};
-		4BC1A6342CD67D5800E9B90B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4BC1A6172CD67D5600E9B90B /* VimConf2024 */;
-			targetProxy = 4BC1A6332CD67D5800E9B90B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4BC1A63A2CD67D5800E9B90B /* Debug */ = {
@@ -464,80 +320,6 @@
 			};
 			name = Release;
 		};
-		4BC1A6402CD67D5800E9B90B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 47E56DYP3N;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.theuhooi.VimConf2024Tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VimConf2024.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VimConf2024";
-			};
-			name = Debug;
-		};
-		4BC1A6412CD67D5800E9B90B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 47E56DYP3N;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.theuhooi.VimConf2024Tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VimConf2024.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VimConf2024";
-			};
-			name = Release;
-		};
-		4BC1A6432CD67D5800E9B90B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 47E56DYP3N;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.theuhooi.VimConf2024UITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = VimConf2024;
-			};
-			name = Debug;
-		};
-		4BC1A6442CD67D5800E9B90B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 47E56DYP3N;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.theuhooi.VimConf2024UITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = VimConf2024;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -555,24 +337,6 @@
 			buildConfigurations = (
 				4BC1A63D2CD67D5800E9B90B /* Debug */,
 				4BC1A63E2CD67D5800E9B90B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4BC1A63F2CD67D5800E9B90B /* Build configuration list for PBXNativeTarget "VimConf2024Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4BC1A6402CD67D5800E9B90B /* Debug */,
-				4BC1A6412CD67D5800E9B90B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4BC1A6422CD67D5800E9B90B /* Build configuration list for PBXNativeTarget "VimConf2024UITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4BC1A6432CD67D5800E9B90B /* Debug */,
-				4BC1A6442CD67D5800E9B90B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
