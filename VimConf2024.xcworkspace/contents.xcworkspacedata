@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:VimConf2024Package">
+   </FileRef>
+   <FileRef
       location = "group:VimConf2024.xcodeproj">
    </FileRef>
 </Workspace>

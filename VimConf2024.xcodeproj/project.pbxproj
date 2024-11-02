@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4BACA4352CD684AB0019BC0D /* VimConf2024 in Frameworks */ = {isa = PBXBuildFile; productRef = 4BACA4342CD684AB0019BC0D /* VimConf2024 */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		4BC1A6292CD67D5800E9B90B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BACA4352CD684AB0019BC0D /* VimConf2024 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +77,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4BACA4332CD684AB0019BC0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4BC1A60F2CD67D5600E9B90B = {
 			isa = PBXGroup;
 			children = (
 				4BC1A61A2CD67D5600E9B90B /* VimConf2024 */,
 				4BC1A62B2CD67D5800E9B90B /* VimConf2024Tests */,
 				4BC1A6352CD67D5800E9B90B /* VimConf2024UITests */,
+				4BACA4332CD684AB0019BC0D /* Frameworks */,
 				4BC1A6192CD67D5600E9B90B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +125,7 @@
 			);
 			name = VimConf2024;
 			packageProductDependencies = (
+				4BACA4342CD684AB0019BC0D /* VimConf2024 */,
 			);
 			productName = VimConf2024;
 			productReference = 4BC1A6182CD67D5600E9B90B /* VimConf2024.app */;
@@ -564,6 +578,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4BACA4342CD684AB0019BC0D /* VimConf2024 */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VimConf2024;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4BC1A6102CD67D5600E9B90B /* Project object */;
 }
