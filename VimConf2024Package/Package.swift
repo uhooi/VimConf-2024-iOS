@@ -36,7 +36,31 @@ let package = Package(
 
         .target(
             name: "VimConf2024App",
+            dependencies: [
+                "TimetableFeature",
+            ],
             path: "./Sources/Apps/VimConf2024"),
+
+        // MARK: Feature layer
+
+        .target(
+            name: "TimetableFeature",
+            dependencies: [
+                "TimetableData",
+            ],
+            path: "./Sources/Features/Timetable"),
+
+        // MARK: Data layer
+        
+        .target(
+            name: "TimetableData",
+            dependencies: [
+                "SessionData",
+            ],
+            path: "./Sources/Data/Timetable"),
+        .target(
+            name: "SessionData",
+            path: "./Sources/Data/Session"),
     ]
 )
 
