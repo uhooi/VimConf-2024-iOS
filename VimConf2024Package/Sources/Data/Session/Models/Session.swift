@@ -14,12 +14,6 @@ extension Session {
         title: "Opening",
         abstract: "",
         language: .english,
-        speaker: .init(
-            name: "mopp",
-            imageURL: nil,
-            description: "",
-            gitHubURL: nil,
-            xURL: nil
-        )
+        speaker: .mopp
     )
 }

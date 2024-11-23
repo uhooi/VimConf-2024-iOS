@@ -7,3 +7,15 @@ package struct SessionSpeaker: Sendable {
     package let gitHubURL: URL?
     package let xURL: URL?
 }
+
+// MARK: - Internals
+
+extension SessionSpeaker {
+    static let mopp: Self = .init(
+        name: "mopp",
+        imageURL: nil,
+        description: "",
+        gitHubURL: nil,
+        xURL: nil
+    )
+}
