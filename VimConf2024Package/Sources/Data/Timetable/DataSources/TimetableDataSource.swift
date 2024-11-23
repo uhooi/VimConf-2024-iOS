@@ -14,6 +14,8 @@ extension DefaultTimetableDataSource: TimetableDataSource {
     func timetables() async throws -> [Timetable] {
         [
             .opening,
+            .keynote1,
+            .keynote2,
         ]
     }
 }

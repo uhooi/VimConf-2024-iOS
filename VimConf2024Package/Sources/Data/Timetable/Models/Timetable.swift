@@ -23,7 +23,21 @@ extension Timetable {
         id: UUID(),
         startTime: Date(timeIntervalSince1970: 1732323600),
         endTime: Date(timeIntervalSince1970: 1732324200),
-        title: "Opening",
+        title: Session.opening.title,
         session: .opening
+    )
+    static let keynote1: Self = .init(
+        id: UUID(),
+        startTime: Date(timeIntervalSince1970: 1732324200),
+        endTime: Date(timeIntervalSince1970: 1732327800),
+        title: Session.keynote1.title,
+        session: .keynote1
+    )
+    static let keynote2: Self = .init(
+        id: UUID(),
+        startTime: Date(timeIntervalSince1970: 1732328400),
+        endTime: Date(timeIntervalSince1970: 1732330800),
+        title: Session.keynote2.title,
+        session: .keynote2
     )
 }
