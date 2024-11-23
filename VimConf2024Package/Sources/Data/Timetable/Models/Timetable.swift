@@ -7,6 +7,13 @@ package struct Timetable: Identifiable, Sendable {
     package let endTime: Date
     package let title: String
     package let session: Session?
+    
+    package var startTimeText: String {
+        startTime.formatted(date: .omitted, time: .shortened)
+    }
+    package var endTimeText: String {
+        endTime.formatted(date: .omitted, time: .shortened)
+    }
 }
 
 // MARK: - Internals
