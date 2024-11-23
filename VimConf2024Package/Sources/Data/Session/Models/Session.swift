@@ -30,4 +30,18 @@ package extension Session {
         language: .english,
         speaker: .tjDeVries
     )
+    static let masteringQuickfix: Self = .init(
+        id: UUID(),
+        title: "Mastering Quickfix",
+        abstract: "Dive deep into one of Vim’s most powerful yet often underutilized features: quickfix. This talk will guide you through the journey from basic usage to advanced techniques, showing how quickfix can dramatically enhance your editing efficiency.",
+        language: .english,
+        speaker: .daisuzu
+    )
+    static let hackingVimScript: Self = .init(
+        id: UUID(),
+        title: "Hacking Vim script",
+        abstract: "By understanding the internal implementation of Vim script, we aim to explore more effective ways to write Vim script. As of 2024, there are two main implementations of Vim script: one by Vim and a derivative implementation by Neovim. Additionally, with the introduction of Vim9 script into Vim, the processing of built-in functions has become more complex due to the intertwined handling required for both scripts. In this presentation, we will delve into the internal workings of Vim script and Vim9 script, with the goal of empowering you to hack Vim script more effectively.",
+        language: .japanese,
+        speaker: .kotaKato
+    )
 }

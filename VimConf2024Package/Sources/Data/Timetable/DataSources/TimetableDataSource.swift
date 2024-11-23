@@ -13,9 +13,14 @@ final class DefaultTimetableDataSource {
 extension DefaultTimetableDataSource: TimetableDataSource {
     func timetables() async throws -> [Timetable] {
         [
+            .reception,
             .opening,
             .keynote1,
+            .shortBreak1,
             .keynote2,
+            .lunchBreak,
+            .masteringQuickfix,
+            .hackingVimScript,
         ]
     }
 }

@@ -51,7 +51,7 @@ let package = Package(
             path: "./Sources/Features/Timetable"),
 
         // MARK: Data layer
-        
+
         .target(
             name: "TimetableData",
             dependencies: [

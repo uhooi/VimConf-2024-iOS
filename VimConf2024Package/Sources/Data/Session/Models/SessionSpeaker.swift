@@ -22,14 +22,14 @@ extension SessionSpeaker {
         name: "Christian Brabandt",
         imageURL: nil,
         description: "",
-        gitHubURL: nil,
+        gitHubURL: .init(string: "https://github.com/chrisbra"),
         xURL: nil
     )
     static let tjDeVries: Self = .init(
         name: "TJ DeVries",
         imageURL: nil,
         description: "",
-        gitHubURL: nil,
+        gitHubURL: .init(string: "https://github.com/tjdevries"),
         xURL: nil
     )
     static let daisuzu: Self = .init(

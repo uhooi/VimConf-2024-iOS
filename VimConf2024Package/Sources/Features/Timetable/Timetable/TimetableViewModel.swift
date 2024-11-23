@@ -37,13 +37,13 @@ final class TimetableViewModel {
         self.uiState = TimetableUiState()
         self.timetableRepository = timetableRepository
     }
-    
+
     func send(_ action: TimetableAction) {
         switch action {
         case let .screen(screenAction):
             switch screenAction {
             }
-            
+
         case let .view(viewAction):
             switch viewAction {
             case .onShowSessionButtonClick:
@@ -51,7 +51,7 @@ final class TimetableViewModel {
             }
         }
     }
-    
+
     func sendAsync(_ asyncAction: TimetableAsyncAction) async {
         switch asyncAction {
         case let .screen(screenAsyncAction):
@@ -63,7 +63,7 @@ final class TimetableViewModel {
                     // TODO: Handle error
                 }
             }
-            
+
         case let .view(viewAsyncAction):
             switch viewAsyncAction {
             }
