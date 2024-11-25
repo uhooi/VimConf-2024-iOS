@@ -3,7 +3,9 @@ import TimetableFeature
 
 public struct RootScreen: View {
     public var body: some View {
-        TimetableScreen()
+        NavigationStack {
+            TimetableScreen()
+        }
     }
 
     public init() {}
