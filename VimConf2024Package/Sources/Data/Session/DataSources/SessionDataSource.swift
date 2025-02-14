@@ -1,7 +1,7 @@
 import Foundation
 
 protocol SessionDataSource: Sendable {
-    func favariteSessions() async throws -> [Session]
+    func favoriteSessions() async throws -> [Session]
 }
 
 final class DefaultSessionDataSource {
@@ -12,7 +12,7 @@ final class DefaultSessionDataSource {
 
 extension DefaultSessionDataSource: SessionDataSource {
     // TODO: Impl
-    func favariteSessions() async throws -> [Session] {
+    func favoriteSessions() async throws -> [Session] {
         [
             .init(
                 id: UUID(),

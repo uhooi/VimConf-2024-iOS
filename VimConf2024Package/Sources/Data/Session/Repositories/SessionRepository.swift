@@ -1,5 +1,5 @@
 package protocol SessionRepository: Sendable {
-    func favariteSessions() async throws -> [Session]
+    func favoriteSessions() async throws -> [Session]
 }
 
 package final class DefaultSessionRepository {
@@ -15,7 +15,7 @@ package final class DefaultSessionRepository {
 }
 
 extension DefaultSessionRepository: SessionRepository {
-    package func favariteSessions() async throws -> [Session] {
-        try await sessionDataSource.favariteSessions()
+    package func favoriteSessions() async throws -> [Session] {
+        try await sessionDataSource.favoriteSessions()
     }
 }
