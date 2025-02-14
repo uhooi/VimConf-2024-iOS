@@ -1,8 +1,11 @@
 public import SwiftUI
+import TimetableFeature
 
 public struct RootScreen: View {
     public var body: some View {
-        Text("Hello, World!")
+        NavigationStack {
+            TimetableScreen()
+        }
     }
 
     public init() {}
