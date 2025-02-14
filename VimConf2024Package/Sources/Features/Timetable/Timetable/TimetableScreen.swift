@@ -1,6 +1,6 @@
 package import SwiftUI
 
-// MARK: Actions
+// MARK: - Actions
 
 enum TimetableScreenAction {
 }

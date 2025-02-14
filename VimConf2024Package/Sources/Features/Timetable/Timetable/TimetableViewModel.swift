@@ -2,7 +2,7 @@ import Foundation
 import Observation
 import TimetableData
 
-// MARK: UI state
+// MARK: - UI state
 
 struct TimetableUiState {
     var timetables: [Timetable] = []
@@ -24,6 +24,8 @@ enum TimetableAsyncAction {
 
 enum TimetableError: LocalizedError {
 }
+
+// MARK: - View model
 
 @MainActor @Observable
 final class TimetableViewModel {

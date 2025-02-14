@@ -1,7 +1,7 @@
 import SwiftUI
 import TimetableData
 
-// MARK: Actions
+// MARK: - Actions
 
 enum TimetableViewAction {
     case onShowSessionButtonClick
