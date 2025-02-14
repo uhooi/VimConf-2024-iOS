@@ -1,6 +1,6 @@
 package import Foundation
 
-package struct Session: Identifiable, Sendable {
+package struct Session: Identifiable, Hashable, Sendable {
     package let id: UUID
     package let title: String
     package let abstract: String

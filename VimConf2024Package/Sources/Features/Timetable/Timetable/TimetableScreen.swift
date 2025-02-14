@@ -1,4 +1,5 @@
 package import SwiftUI
+import TimetableData
 
 // MARK: - Actions
 
@@ -19,6 +20,9 @@ package struct TimetableScreen: View {
             timetables: viewModel.uiState.timetables
         )
         .navigationTitle("Time table") // TODO: Localize
+        .navigationDestination(for: Timetable.self) { timetable in
+            Text("TODO: Show session") // TODO: Show session
+        }
         .task {
             await viewModel.sendAsync(.screen(.task))
         }

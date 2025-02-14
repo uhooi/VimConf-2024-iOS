@@ -1,10 +1,10 @@
 import SwiftUI
+import SessionData
 import TimetableData
 
 // MARK: - Actions
 
 enum TimetableViewAction {
-    case onShowSessionButtonClick
 }
 
 enum TimetableViewAsyncAction {
@@ -17,7 +17,9 @@ struct TimetableView: View {
 
     var body: some View {
         List(timetables) { timetable in
-            TimetableRowView(timetable: timetable)
+            NavigationLink(value: timetable) {
+                TimetableRowView(timetable: timetable)
+            }
         }
     }
 }

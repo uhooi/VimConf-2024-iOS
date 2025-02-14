@@ -41,17 +41,15 @@ final class TimetableViewModel {
     }
 
     func send(_ action: TimetableAction) {
-        switch action {
-        case let .screen(screenAction):
-            switch screenAction {
-            }
-
-        case let .view(viewAction):
-            switch viewAction {
-            case .onShowSessionButtonClick:
-                break // TODO:
-            }
-        }
+//        switch action {
+//        case let .screen(screenAction):
+//            switch screenAction {
+//            }
+//
+//        case let .view(viewAction):
+//            switch viewAction {
+//            }
+//        }
     }
 
     func sendAsync(_ asyncAction: TimetableAsyncAction) async {

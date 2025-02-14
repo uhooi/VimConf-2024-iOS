@@ -1,4 +1,4 @@
-package enum Language: Sendable {
+package enum Language: Hashable, Sendable {
     case japanese
     case english
     
