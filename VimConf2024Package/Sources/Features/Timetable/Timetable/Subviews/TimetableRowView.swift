@@ -1,4 +1,5 @@
 import SwiftUI
+import SessionData
 import TimetableData
 
 struct TimetableRowView: View {
@@ -25,9 +26,20 @@ struct TimetableRowView: View {
                     .foregroundStyle(.white)
                     .padding(.vertical, 4)
                     .padding(.horizontal, 6)
-                    .background(.blue)
+                    .background(session.language.backgroundColor)
                     .clipShape(.rect(cornerRadius: 4))
             }
+        }
+    }
+}
+
+// MARK: - Privates
+
+private extension Language {
+    var backgroundColor: Color {
+        switch self {
+        case .japanese: .teal
+        case .english: .cyan
         }
     }
 }
