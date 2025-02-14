@@ -21,6 +21,19 @@ extension DefaultTimetableDataSource: TimetableDataSource {
             .lunchBreak,
             .masteringQuickfix,
             .hackingVimScript,
+            .switchBetweenProjectsLikeANinja,
+            .shortBreak2,
+            .vimMeetsLocalLLM,
+            .creatingTheVimVersionOfVSCodeDevContainerExtension,
+            .neovimforFrontendDevelopers,
+            .shortBreak3,
+            .buildingNeovimPlugins,
+            .cannotHelpFallingInVim,
+            .theLatestDarkDenoPoweredPlugins,
+            .shortBreak4,
+            .lightningTalks,
+            .closing,
+            .afterParty,
         ]
     }
 }

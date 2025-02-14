@@ -75,4 +75,95 @@ extension Timetable {
         title: Session.hackingVimScript.title,
         session: .hackingVimScript
     )
+    static let switchBetweenProjectsLikeANinja: Self = .init(
+        id: UUID(),
+        startTime: Date(timeIntervalSince1970: 1732337100),
+        endTime: Date(timeIntervalSince1970: 1732338000),
+        title: Session.switchBetweenProjectsLikeANinja.title,
+        session: .switchBetweenProjectsLikeANinja
+    )
+    static let shortBreak2: Self = .init(
+        id: UUID(),
+        startTime: Date(timeIntervalSince1970: 1732338000),
+        endTime: Date(timeIntervalSince1970: 1732338900),
+        title: "Short break",
+        session: nil
+    )
+    static let vimMeetsLocalLLM: Self = .init(
+        id: UUID(),
+        startTime: Date(timeIntervalSince1970: 1732338900),
+        endTime: Date(timeIntervalSince1970: 1732340100),
+        title: Session.vimMeetsLocalLLM.title,
+        session: .vimMeetsLocalLLM
+    )
+    static let creatingTheVimVersionOfVSCodeDevContainerExtension: Self = .init(
+        id: UUID(),
+        startTime: Date(timeIntervalSince1970: 1732340100),
+        endTime: Date(timeIntervalSince1970: 1732341000),
+        title: Session.creatingTheVimVersionOfVSCodeDevContainerExtension.title,
+        session: .creatingTheVimVersionOfVSCodeDevContainerExtension
+    )
+    static let neovimforFrontendDevelopers: Self = .init(
+        id: UUID(),
+        startTime: Date(timeIntervalSince1970: 1732341000),
+        endTime: Date(timeIntervalSince1970: 1732342200),
+        title: Session.neovimforFrontendDevelopers.title,
+        session: .neovimforFrontendDevelopers
+    )
+    static let shortBreak3: Self = .init(
+        id: UUID(),
+        startTime: Date(timeIntervalSince1970: 1732342200),
+        endTime: Date(timeIntervalSince1970: 1732343100),
+        title: "Short break",
+        session: nil
+    )
+    static let buildingNeovimPlugins: Self = .init(
+        id: UUID(),
+        startTime: Date(timeIntervalSince1970: 1732343100),
+        endTime: Date(timeIntervalSince1970: 1732344300),
+        title: Session.buildingNeovimPlugins.title,
+        session: .buildingNeovimPlugins
+    )
+    static let cannotHelpFallingInVim: Self = .init(
+        id: UUID(),
+        startTime: Date(timeIntervalSince1970: 1732344300),
+        endTime: Date(timeIntervalSince1970: 1732346100),
+        title: Session.cannotHelpFallingInVim.title,
+        session: .cannotHelpFallingInVim
+    )
+    static let theLatestDarkDenoPoweredPlugins: Self = .init(
+        id: UUID(),
+        startTime: Date(timeIntervalSince1970: 1732346100),
+        endTime: Date(timeIntervalSince1970: 1732347300),
+        title: Session.theLatestDarkDenoPoweredPlugins.title,
+        session: .theLatestDarkDenoPoweredPlugins
+    )
+    static let shortBreak4: Self = .init(
+        id: UUID(),
+        startTime: Date(timeIntervalSince1970: 1732347300),
+        endTime: Date(timeIntervalSince1970: 1732348200),
+        title: "Short break",
+        session: nil
+    )
+    static let lightningTalks: Self = .init(
+        id: UUID(),
+        startTime: Date(timeIntervalSince1970: 1732348200),
+        endTime: Date(timeIntervalSince1970: 1732350000),
+        title: "Lightning Talks (5min x 6)",
+        session: nil
+    )
+    static let closing: Self = .init(
+        id: UUID(),
+        startTime: Date(timeIntervalSince1970: 1732350000),
+        endTime: Date(timeIntervalSince1970: 1732350600),
+        title: Session.closing.title,
+        session: .closing
+    )
+    static let afterParty: Self = .init(
+        id: UUID(),
+        startTime: Date(timeIntervalSince1970: 1732350600),
+        endTime: Date(timeIntervalSince1970: 1732357800),
+        title: "After party",
+        session: nil
+    )
 }
