@@ -82,4 +82,8 @@ let package = Package(
 
 for target in package.targets {
     target.swiftSettings = swiftSettings
+
+    if target.name.hasSuffix("Feature") {
+        target.dependencies.append("RoutingCore")
+    }
 }
