@@ -1,4 +1,5 @@
 package import SwiftUI
+import RoutingCore
 import TimetableData
 
 // MARK: - Actions
@@ -13,6 +14,7 @@ enum TimetableScreenAsyncAction {
 // MARK: - View
 
 package struct TimetableScreen: View {
+    @Environment(\.router) private var router
     @State private var viewModel: TimetableViewModel
 
     package var body: some View {
@@ -21,7 +23,9 @@ package struct TimetableScreen: View {
         )
         .navigationTitle("Time table") // TODO: Localize
         .navigationDestination(for: Timetable.self) { timetable in
-            Text("TODO: Show session") // TODO: Show session
+            if let sessionID = timetable.session?.id {
+                router.navigate(to: .sessionDetail(sessionID))
+            }
         }
         .task {
             await viewModel.sendAsync(.screen(.task))

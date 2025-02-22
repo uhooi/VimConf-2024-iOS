@@ -38,6 +38,8 @@ let package = Package(
             name: "VimConf2024App",
             dependencies: [
                 "TimetableFeature",
+                "SessionFeature",
+                "RoutingCore",
             ],
             path: "./Sources/Apps/VimConf2024"),
 
@@ -49,6 +51,12 @@ let package = Package(
                 "TimetableData",
             ],
             path: "./Sources/Features/Timetable"),
+        .target(
+            name: "SessionFeature",
+            dependencies: [
+                "SessionData",
+            ],
+            path: "./Sources/Features/Session"),
 
         // MARK: Data layer
 
@@ -61,6 +69,14 @@ let package = Package(
         .target(
             name: "SessionData",
             path: "./Sources/Data/Session"),
+        
+        // MARK: Core layer
+
+        .target(
+            name: "RoutingCore",
+            dependencies: [
+            ],
+            path: "./Sources/Core/Routing"),
     ]
 )
 

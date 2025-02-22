@@ -1,5 +1,4 @@
 import SwiftUI
-import SessionData
 import TimetableData
 
 // MARK: - Actions
