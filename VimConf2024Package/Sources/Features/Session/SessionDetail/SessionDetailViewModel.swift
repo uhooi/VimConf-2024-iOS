@@ -31,12 +31,12 @@ enum SessionDetailError: LocalizedError {
 final class SessionDetailViewModel {
     private(set) var uiState: SessionDetailUiState
 
-    init?(
+    init(
         sessionID: String,
         sessionRepository: some SessionRepository = DefaultSessionRepository.shared
     ) {
         guard let session = try? sessionRepository.session(by: sessionID) else {
-            return nil
+            fatalError("Failed to get session. sessionID: \(sessionID)")
         }
         self.uiState = SessionDetailUiState(
             session: session

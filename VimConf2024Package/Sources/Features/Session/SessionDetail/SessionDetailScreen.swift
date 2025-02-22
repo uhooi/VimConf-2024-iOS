@@ -18,15 +18,11 @@ package struct SessionDetailScreen: View {
         SessionDetailView(session: viewModel.uiState.session)
     }
 
-    package init?(
+    package init(
         sessionID: String
     ) {
-        guard let viewModel = SessionDetailViewModel(
+        self.viewModel = SessionDetailViewModel(
             sessionID: sessionID
-        ) else {
-            return nil
-        }
-        self.viewModel = viewModel
+        )
     }
 }
-
