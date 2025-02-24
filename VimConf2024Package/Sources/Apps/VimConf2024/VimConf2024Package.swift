@@ -3,12 +3,12 @@ import TimetableFeature
 import RoutingCore
 
 public struct RootScreen: View {
-    private let router: some Router = DefaultRouter()
+    private let router = DefaultRouter()
 
     public var body: some View {
         NavigationStack {
-            TimetableScreen()
-                .environment(\.router, router)
+            TimetableScreen<DefaultRouter>()
+                .environmentObject(router)
         }
     }
 

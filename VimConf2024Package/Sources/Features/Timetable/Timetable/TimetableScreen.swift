@@ -1,5 +1,5 @@
 package import SwiftUI
-import RoutingCore
+package import RoutingCore
 import TimetableData
 
 // MARK: - Actions
@@ -13,8 +13,8 @@ enum TimetableScreenAsyncAction {
 
 // MARK: - View
 
-package struct TimetableScreen: View {
-    @Environment(\.router) private var router
+package struct TimetableScreen<R: Router>: View {
+    @EnvironmentObject private var router: R
     @State private var viewModel: TimetableViewModel
 
     package var body: some View {

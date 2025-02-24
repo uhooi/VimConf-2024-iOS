@@ -2,7 +2,7 @@ import SwiftUI
 import SessionFeature
 import RoutingCore
 
-struct DefaultRouter {}
+final class DefaultRouter {}
 
 extension DefaultRouter: Router {
     func navigate(to destination: RoutingCore.Destination) -> some View {
