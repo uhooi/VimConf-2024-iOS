@@ -22,10 +22,8 @@ package struct TimetableScreen<R: Router>: View {
             timetables: viewModel.uiState.timetables
         )
         .navigationTitle("Time table") // TODO: Localize
-        .navigationDestination(for: Timetable.self) { timetable in
-            if let sessionID = timetable.session?.id {
-                router.navigate(to: .sessionDetail(sessionID))
-            }
+        .navigationDestination(for: String.self) { sessionID in
+            router.navigate(to: .sessionDetail(sessionID))
         }
         .task {
             await viewModel.sendAsync(.screen(.task))

@@ -16,7 +16,11 @@ struct TimetableView: View {
 
     var body: some View {
         List(timetables) { timetable in
-            NavigationLink(value: timetable) {
+            if let sessionID = timetable.session?.id {
+                NavigationLink(value: sessionID) {
+                    TimetableRowView(timetable: timetable)
+                }
+            } else {
                 TimetableRowView(timetable: timetable)
             }
         }
