@@ -8,7 +8,7 @@ public struct RootScreen: View {
     public var body: some View {
         NavigationStack {
             TimetableScreen<DefaultRouter>()
-                .environmentObject(router)
+                .environment(router)
         }
     }
 

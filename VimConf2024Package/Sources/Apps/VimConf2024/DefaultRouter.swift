@@ -2,6 +2,7 @@ import SwiftUI
 import SessionFeature
 import RoutingCore
 
+@Observable
 final class DefaultRouter {}
 
 extension DefaultRouter: Router {
