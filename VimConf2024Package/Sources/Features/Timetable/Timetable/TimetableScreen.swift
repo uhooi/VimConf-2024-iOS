@@ -14,7 +14,7 @@ enum TimetableScreenAsyncAction {
 // MARK: - View
 
 package struct TimetableScreen<R: Router>: View {
-    @EnvironmentObject private var router: R
+    @Environment(R.self) private var router
     @State private var viewModel: TimetableViewModel
 
     package var body: some View {
