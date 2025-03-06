@@ -57,7 +57,7 @@ struct SessionDetailView: View {
                             case .failure:
                                 Color.red
                             @unknown default:
-                                fatalError()
+                                fatalError("Add case: \(phase)")
                             }
                         }
                         .scaledToFit()
