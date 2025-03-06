@@ -3,7 +3,7 @@ import Foundation
 package struct Session: Identifiable, Hashable, Sendable {
     package let id: String
     package let title: String
-    package let abstract: String
+    package let abstract: String?
     package let language: Language
     package let speaker: SessionSpeaker
 }
@@ -12,7 +12,7 @@ package extension Session {
     static let opening: Self = .init(
         id: UUID().uuidString,
         title: "Opening",
-        abstract: "",
+        abstract: nil,
         language: .english,
         speaker: .mopp
     )
@@ -135,7 +135,7 @@ package extension Session {
     static let closing: Self = .init(
         id: UUID().uuidString,
         title: "Closing",
-        abstract: "",
+        abstract: nil,
         language: .english,
         speaker: .mopp
     )

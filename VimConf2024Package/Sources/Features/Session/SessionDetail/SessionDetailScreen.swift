@@ -16,6 +16,7 @@ package struct SessionDetailScreen: View {
 
     package var body: some View {
         SessionDetailView(session: viewModel.uiState.session)
+            .navigationTitle(viewModel.uiState.session.title)
     }
 
     package init(
