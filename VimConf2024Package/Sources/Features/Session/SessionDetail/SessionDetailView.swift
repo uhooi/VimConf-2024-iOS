@@ -47,20 +47,27 @@ struct SessionDetailView: View {
                             .font(.title3)
                             .frame(maxWidth: .infinity)
 
-                        AsyncImage(url: session.speaker.imageURL) { phase in
-                            switch phase {
-                            case .empty:
-                                Color.gray
-                            case .success(let image):
-                                image
-                                    .resizable()
-                            case .failure:
-                                Color.red
-                            @unknown default:
-                                fatalError("Add case: \(phase)")
+                        if let url = session.speaker.imageURL {
+                            AsyncImage(url: url) { phase in
+                                switch phase {
+                                case .empty:
+                                    Color.gray
+                                case .success(let image):
+                                    image
+                                        .resizable()
+                                case .failure:
+                                    Color.gray
+                                        .overlay {
+                                            Image(systemName: "person.crop.circle.badge.xmark")
+                                                .font(.title)
+                                                .foregroundStyle(.white)
+                                        }
+                                @unknown default:
+                                    fatalError("Add case: \(phase)")
+                                }
                             }
+                            .scaledToFit()
                         }
-                        .scaledToFit()
                     }
 
                     Text(session.speaker.description)
