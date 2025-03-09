@@ -3,7 +3,7 @@ import TimetableFeature
 import RoutingCore
 
 public struct RootScreen: View {
-    private let router = DefaultRouter()
+    @State private var router = DefaultRouter()
 
     public var body: some View {
         NavigationStack {
