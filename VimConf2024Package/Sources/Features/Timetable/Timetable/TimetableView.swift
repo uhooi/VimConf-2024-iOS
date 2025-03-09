@@ -4,7 +4,6 @@ import TimetableData
 // MARK: - Actions
 
 enum TimetableViewAction {
-    case onShowSessionButtonClick
 }
 
 enum TimetableViewAsyncAction {
@@ -17,7 +16,13 @@ struct TimetableView: View {
 
     var body: some View {
         List(timetables) { timetable in
-            TimetableRowView(timetable: timetable)
+            if let sessionID = timetable.session?.id {
+                NavigationLink(value: sessionID) {
+                    TimetableRowView(timetable: timetable)
+                }
+            } else {
+                TimetableRowView(timetable: timetable)
+            }
         }
     }
 }

@@ -21,7 +21,7 @@ struct TimetableRowView: View {
                     .font(.body)
                     .frame(maxWidth: .infinity, alignment: .leading)
 
-                Text(session.language.text)
+                Text(session.language.text) // TODO: Share
                     .font(.caption.bold())
                     .foregroundStyle(.white)
                     .padding(.vertical, 4)
@@ -29,17 +29,6 @@ struct TimetableRowView: View {
                     .background(session.language.backgroundColor)
                     .clipShape(.rect(cornerRadius: 4))
             }
-        }
-    }
-}
-
-// MARK: - Privates
-
-private extension Language {
-    var backgroundColor: Color {
-        switch self {
-        case .japanese: .teal
-        case .english: .cyan
         }
     }
 }

@@ -1,6 +1,6 @@
 package import Foundation
 
-package struct SessionSpeaker: Sendable {
+package struct SessionSpeaker: Hashable, Sendable {
     package let name: String
     package let imageURL: URL?
     package let description: String

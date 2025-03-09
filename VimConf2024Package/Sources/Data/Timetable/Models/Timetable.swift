@@ -1,7 +1,7 @@
 package import Foundation
 package import SessionData
 
-package struct Timetable: Identifiable, Sendable {
+package struct Timetable: Identifiable, Hashable, Sendable {
     package let id: UUID
     package let startDate: Date
     package let endDate: Date
